@@ -2,7 +2,7 @@
 
 This repository contains a responsive website template designed to serve as a starting point for building adaptable and mobile-friendly sites. The structure follows best practices in modern web development, with modular and scalable CSS, simple HTML organization, and space for JavaScript enhancements.
 
-The goal of this template is to streamline future website projects by providing a reusable foundation. Over time, it will evolve to reflect improved coding patterns and responsive design techniques.
+This template is themed around a vibrant burger-focused design, inspired by a street/fast food market aesthetic. The project is based on a tutorial I followed, available [here](https://www.youtube.com/watch?v=MYFgtnKMDp4&t=6s). The goal of this template is to provide a reusable foundation for future food-related (or not) website projects.
 
 ## Project Overview
 
@@ -24,6 +24,7 @@ responsive-website-template/
 ├── js/
 │   └── ...
 │
+├── LICENSE
 └── README.md
 ```
 
