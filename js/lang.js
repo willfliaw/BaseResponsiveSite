@@ -2,21 +2,12 @@
 
 async function fetchAvailableLanguages() {
     try {
-        const response = await fetch("translations/");
-        const text = await response.text();
-        const parser = new DOMParser();
-        const htmlDoc = parser.parseFromString(text, "text/html");
-        const files = Array.from(htmlDoc.querySelectorAll("a"));
-        const langFiles = files.filter((file) => file.href.endsWith(".json"));
-
-        const languages = langFiles.map((file) => {
-            const fileName = file.href.split("/").pop().replace(".json", "");
-            return { code: fileName, label: fileName.toUpperCase() };
-        });
-
-        populateLanguageSelector(languages);
+        const response = await fetch("translations/manifest.json");
+        if (!response.ok) throw new Error("Manifest not found");
+        const data = await response.json();
+        populateLanguageSelector(data.languages);
     } catch (error) {
-        console.error("Error fetching translation files:", error);
+        console.error("Error fetching language manifest:", error);
     }
 }
 
