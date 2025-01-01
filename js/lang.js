@@ -50,7 +50,9 @@ function applyTranslations(translations) {
             if (element.hasAttribute("placeholder")) {
                 element.setAttribute("placeholder", translations[key]);
             } else {
+                const tempClass = element.className;  // Store existing class
                 element.textContent = translations[key];
+                element.className = tempClass;  // Reapply class after translation
             }
         }
     });

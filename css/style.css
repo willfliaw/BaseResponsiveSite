@@ -12,8 +12,8 @@
     /* Colors */
     --white-color: #fff;
     --dark-color: #252525;
-    --primary-color: #1e3a8a; /* Deep blue for a welcoming yet modern feel */
-    --secondary-color: #7dadf9; /* Bright blue for accents and highlights */
+    --primary-color: #1e3a8a;
+    --secondary-color: #7dadf9;
     --light-color: #f4f6fa;
     --medium-gray-color: #ccc;
 
@@ -406,13 +406,6 @@ header .navbar {
     margin: 10px auto 0;
     border-radius: var(--border-radius-s);
     background: var(--secondary-color);
-}
-
-.section-content p {
-    font-size: var(--font-size-m);
-    color: var(--dark-color);
-    margin-bottom: 20px;
-    line-height: 1.6;
 }
 
 /* Contact section styling */
