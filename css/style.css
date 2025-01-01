@@ -12,8 +12,8 @@
     /* Colors */
     --white-color: #fff;
     --dark-color: #252525;
-    --primary-color: #1e3a8a;  /* Deep blue for a welcoming yet modern feel */
-    --secondary-color: #7dadf9;  /* Bright blue for accents and highlights */
+    --primary-color: #1e3a8a; /* Deep blue for a welcoming yet modern feel */
+    --secondary-color: #7dadf9; /* Bright blue for accents and highlights */
     --light-color: #f4f6fa;
     --medium-gray-color: #ccc;
 
@@ -40,7 +40,7 @@
     --site-max-width: 1300px;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -127,6 +127,16 @@ header .navbar {
 
 .navbar :where(#menu-close-button, #menu-open-button) {
     display: none;
+}
+
+#language-switcher {
+    padding: 0 4px;
+    border: none;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+    color: var(--white-color);
+    font-size: var(--font-size-s);
+    transition: 0.3s ease;
 }
 
 /* Hero section styling */
@@ -625,7 +635,7 @@ header .navbar {
     }
 
     .footer-section .section-content {
-        flex-direction:column;
+        flex-direction: column;
         gap: 20px;
     }
 }

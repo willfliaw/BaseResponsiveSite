@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Welcome to W Hostel</title>
+        <title id="document-title">Welcome to W Hostel!</title>
         <!-- Linking Font Awesome for icons -->
         <link
             rel="stylesheet"
@@ -14,13 +14,14 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
+        <!-- Linking custom stylesheet -->
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <header>
             <nav class="navbar section-content">
                 <a href="#" class="nav-logo">
-                    <h2 class="logo-text">🗻 W Hostel</h2>
+                    <h2 class="logo-text" id="navbar-logo">🗻 W Hostel</h2>
                 </a>
                 <ul class="nav-menu">
                     <button
@@ -29,24 +30,39 @@
                     ></button>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link" id="navbar-about">
+                            About
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                        <a href="#menu" class="nav-link" id="navbar-menu">
+                            Rooms
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#menu" class="nav-link">Rooms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#testimonials" class="nav-link">
+                        <a
+                            href="#testimonials"
+                            class="nav-link"
+                            id="navbar-testimonials"
+                        >
                             Testimonials
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#gallery" class="nav-link">Gallery</a>
+                        <a href="#gallery" class="nav-link" id="navbar-gallery">
+                            Gallery
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link" id="navbar-item">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <select id="language-switcher">
+                            <option value="en">EN</option>
+                            <option value="pt">PT</option>
+                        </select>
                     </li>
                 </ul>
 
@@ -58,19 +74,27 @@
             <section class="hero-section">
                 <div class="section-content">
                     <div class="hero-details">
-                        <h2 class="title">Welcome to W Hostel</h2>
-                        <h3 class="subtitle">
+                        <h2 class="title" id="hero-title">
+                            Welcome to W Hostel
+                        </h2>
+                        <h3 class="subtitle" id="hero-subtitle">
                             Experience comfort and community on your travels!
                         </h3>
-                        <p class="description">
+                        <p class="description" id="hero-description">
                             Located in the heart of the city, W Hostel offers
                             cozy accommodations with top-notch amenities for
                             backpackers and travelers alike.
                         </p>
 
                         <div class="buttons">
-                            <a href="#" class="button order-now">Book Now</a>
-                            <a href="#contact" class="button contact-us">
+                            <a href="#" class="button order" id="hero-order"
+                                >Book Now</a
+                            >
+                            <a
+                                href="#contact"
+                                class="button contact-us"
+                                id="hero-contact"
+                            >
                                 Contact Us
                             </a>
                         </div>
@@ -95,7 +119,7 @@
                         />
                     </div>
                     <div class="about-details">
-                        <h2 class="section-title">About Us</h2>
+                        <h2 class="section-title" id="about-title">About Us</h2>
                         <p class="text">
                             W Hostel is more than just a place to stay. We
                             provide a vibrant community atmosphere, comfortable
@@ -119,7 +143,7 @@
             </section>
 
             <section class="menu-section" id="menu">
-                <h2 class="section-title">Our Rooms</h2>
+                <h2 class="section-title" id="menu-title">Our Rooms</h2>
                 <div class="section-content">
                     <ul class="menu-list">
                         <li class="menu-item">
@@ -128,8 +152,10 @@
                                 alt="Shared Dorm Room"
                                 class="menu-image"
                             />
-                            <h3 class="name">Shared Dorm Room</h3>
-                            <p class="text">
+                            <h3 class="name" id="menu-item1-name">
+                                Shared Dorm Room
+                            </h3>
+                            <p class="text" id="menu-item1-text">
                                 Affordable and social - perfect for backpackers.
                             </p>
                         </li>
@@ -139,8 +165,10 @@
                                 alt="Private Room"
                                 class="menu-image"
                             />
-                            <h3 class="name">Private Room</h3>
-                            <p class="text">
+                            <h3 class="name" id="menu-item2-name">
+                                Private Room
+                            </h3>
+                            <p class="text" id="menu-item2-text">
                                 Enjoy privacy and comfort with our single and
                                 double rooms.
                             </p>
@@ -151,8 +179,10 @@
                                 alt="Family Suite"
                                 class="menu-image"
                             />
-                            <h3 class="name">Family Suite</h3>
-                            <p class="text">
+                            <h3 class="name" id="menu-item3-name">
+                                Family Suite
+                            </h3>
+                            <p class="text" id="menu-item3-text">
                                 Spacious suites perfect for families or groups
                                 looking to stay together.
                             </p>
@@ -163,8 +193,10 @@
                                 alt="Common Area"
                                 class="menu-image"
                             />
-                            <h3 class="name">Common Area</h3>
-                            <p class="text">
+                            <h3 class="name" id="menu-item4-name">
+                                Common Area
+                            </h3>
+                            <p class="text" id="menu-item4-text">
                                 Relax and socialize in our comfortable shared
                                 spaces equipped with games and entertainment.
                             </p>
@@ -175,8 +207,10 @@
                                 alt="Shared Kitchen"
                                 class="menu-image"
                             />
-                            <h3 class="name">Shared Kitchen</h3>
-                            <p class="text">
+                            <h3 class="name" id="menu-item5-name">
+                                Shared Kitchen
+                            </h3>
+                            <p class="text" id="menu-item5-text">
                                 Prepare your meals in our fully equipped shared
                                 kitchen, open 24/7.
                             </p>
@@ -187,8 +221,10 @@
                                 alt="Laundry Room"
                                 class="menu-image"
                             />
-                            <h3 class="name">Laundry Room</h3>
-                            <p class="text">
+                            <h3 class="name" id="menu-item6-name">
+                                Laundry Room
+                            </h3>
+                            <p class="text" id="menu-item6-text">
                                 Keep your clothes fresh during your stay with
                                 our self-service laundry facilities.
                             </p>
@@ -198,7 +234,9 @@
             </section>
 
             <section class="testimonials-section" id="testimonials">
-                <h2 class="section-title">Testimonials</h2>
+                <h2 class="section-title" id="testimonials-title">
+                    Testimonials
+                </h2>
                 <div class="section-content">
                     <div class="slider-container swiper">
                         <div class="slider-wrapper">
@@ -210,9 +248,12 @@
                                         class="user-image"
                                     />
                                     <h3 class="name">Sarah Johnson</h3>
-                                    <i class="feedback">
-                                        "W Hostel was the perfect base for
-                                        my trip! The dorms were clean, and the
+                                    <i
+                                        class="feedback"
+                                        id="testimonials-feedback1"
+                                    >
+                                        "W Hostel was the perfect base for my
+                                        trip! The dorms were clean, and the
                                         common areas made it easy to meet new
                                         friends. Will definitely stay here
                                         again!"
@@ -225,7 +266,10 @@
                                         class="user-image"
                                     />
                                     <h3 class="name">James Wilson</h3>
-                                    <i class="feedback">
+                                    <i
+                                        class="feedback"
+                                        id="testimonials-feedback2"
+                                    >
                                         "Amazing experience! The staff was
                                         incredibly helpful, and the private room
                                         was cozy and quiet. Loved the shared
@@ -239,7 +283,10 @@
                                         class="user-image"
                                     />
                                     <h3 class="name">Michael Brown</h3>
-                                    <i class="feedback">
+                                    <i
+                                        class="feedback"
+                                        id="testimonials-feedback3"
+                                    >
                                         "The best hostel I've stayed in during
                                         my backpacking trip. Great atmosphere
                                         and fun events every night. Highly
@@ -253,7 +300,10 @@
                                         class="user-image"
                                     />
                                     <h3 class="name">Emily Harris</h3>
-                                    <i class="feedback">
+                                    <i
+                                        class="feedback"
+                                        id="testimonials-feedback4"
+                                    >
                                         "Fantastic location! Just a short walk
                                         to all the major attractions. The dorm
                                         was spacious and secure. Would stay here
@@ -267,11 +317,14 @@
                                         class="user-image"
                                     />
                                     <h3 class="name">Anthony Thompson</h3>
-                                    <i class="feedback">
-                                        "I loved the community vibe at W
-                                        Hostel. The game room and common spaces
-                                        were perfect for unwinding after a day
-                                        of exploring."
+                                    <i
+                                        class="feedback"
+                                        id="testimonials-feedback5"
+                                    >
+                                        "I loved the community vibe at W Hostel.
+                                        The game room and common spaces were
+                                        perfect for unwinding after a day of
+                                        exploring."
                                     </i>
                                 </li>
                             </ul>
@@ -289,7 +342,7 @@
             </section>
 
             <section class="gallery-section" id="gallery">
-                <h2 class="section-title">Gallery</h2>
+                <h2 class="section-title" id="gallery-title">Gallery</h2>
                 <div class="section-content">
                     <ul class="gallery-list">
                         <li class="gallery-item">
@@ -339,7 +392,7 @@
             </section>
 
             <section class="contact-section" id="contact">
-                <h2 class="section-title">Contact us</h2>
+                <h2 class="section-title" id="contact-title">Contact us</h2>
                 <div class="section-content">
                     <ul class="contact-info-list">
                         <li class="contact-info">
@@ -375,22 +428,30 @@
                     <form action="#" class="contact-form">
                         <input
                             type="text"
+                            id="contact-name"
                             placeholder="Your name"
                             class="form-input"
                             required
                         />
                         <input
                             type="email"
+                            id="contact-email"
                             placeholder="Your email"
                             class="form-input"
                             required
                         />
                         <textarea
+                            id="contact-message"
                             placeholder="Your message"
                             class="form-input"
                             required
                         ></textarea>
-                        <button class="button submit-button">Submit</button>
+                        <button
+                            class="button submit-button"
+                            id="contact-submit"
+                        >
+                            Submit
+                        </button>
                     </form>
                 </div>
             </section>
@@ -411,9 +472,13 @@
                     </div>
 
                     <p class="policy-text">
-                        <a href="#" class="policy-link">Privacy Policy</a>
+                        <a href="#" class="policy-link" id="footer-privacy">
+                            Privacy Policy
+                        </a>
                         <span class="separator">&bull;</span>
-                        <a href="#" class="policy-link">Refund Policy</a>
+                        <a href="#" class="policy-link" id="footer-refund">
+                            Refund Policy
+                        </a>
                     </p>
                 </div>
             </footer>
@@ -422,7 +487,9 @@
         <!-- Linking Swiper script -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <!-- Linking custom script -->
-        <script src="js/script.js"></script>
+        <!-- Linking custom scripts -->
+        <script src="js/menu.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/lang.js"></script>
     </body>
 </html>
