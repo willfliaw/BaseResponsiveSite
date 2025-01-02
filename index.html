@@ -463,29 +463,48 @@
                     </ul>
 
                     <form action="#" class="contact-form">
+                        <label for="contact-name" id="contact-name-label">
+                            Your Name:
+                        </label>
                         <input
                             type="text"
                             id="contact-name"
-                            placeholder="Your name"
+                            placeholder="John Doe"
                             class="form-input"
                             required
                         />
+                        <small class="error-message" id="name-error"></small>
+
+                        <label for="contact-email" id="contact-email-label">
+                            Your Email:
+                        </label>
                         <input
                             type="email"
                             id="contact-email"
-                            placeholder="Your email"
+                            placeholder="john.doe@email.com"
                             class="form-input"
                             required
                         />
+                        <small class="error-message" id="email-error"></small>
+
+                        <label for="contact-message" id="contact-message-label"
+                            >
+                            Your Message
+                            </label
+                        >
                         <textarea
                             id="contact-message"
-                            placeholder="Your message"
+                            placeholder="Write your message here..."
                             class="form-input"
                             required
                         ></textarea>
+                        <small class="error-message" id="message-error"></small>
+
                         <button
+                            type="submit"
                             class="button submit-button"
                             id="contact-submit"
+                            disabled
                         >
                             Submit
                         </button>
@@ -528,5 +547,11 @@
         <script src="js/menu.js"></script>
         <script src="js/swiper.js"></script>
         <script src="js/lang.js"></script>
+        <script
+            src="https://www.google.com/recaptcha/api.js"
+            async
+            defer
+        ></script>
+        <script src="js/contactForm.js"></script>
     </body>
 </html>

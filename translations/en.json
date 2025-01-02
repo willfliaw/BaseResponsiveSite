@@ -37,9 +37,10 @@
     "location-title": "Location",
     "location-text": "Visit us at the heart of Adventure City. Our hostel is surrounded by vibrant attractions and cultural landmarks. Perfect for travelers seeking both comfort and convenience.",
     "contact-title": "Contact us",
-    "contact-name": "Your name",
-    "contact-email": "Your email",
-    "contact-message": "Your message",
+    "contact-name-label": "Your name:",
+    "contact-email-label": "Your email:",
+    "contact-message-label": "Your message:",
+    "contact-message": "Write your message here...",
     "contact-submit": "Submit",
     "footer-privacy": "Privacy Policy",
     "footer-refund": "Refund Policy"

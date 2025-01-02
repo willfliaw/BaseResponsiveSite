@@ -37,9 +37,10 @@
     "location-title": "Localização",
     "location-text": "Visite-nos no coração da Cidade da Aventura. Nosso hostel está rodeado de atrações vibrantes e pontos culturais. Perfeito para viajantes que buscam conforto e conveniência.",
     "contact-title": "Fale Conosco",
-    "contact-name": "Seu nome",
-    "contact-email": "Seu email",
-    "contact-message": "Sua mensagem",
+    "contact-name-label": "Seu nome:",
+    "contact-email-label": "Seu email:",
+    "contact-message-label": "Sua mensagem:",
+    "contact-message": "Escreva sua mensagem aqui...",
     "contact-submit": "Enviar",
     "footer-privacy": "Política de Privacidade",
     "footer-refund": "Política de Reembolso"

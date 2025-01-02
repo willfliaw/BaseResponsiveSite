@@ -37,9 +37,10 @@
     "location-title": "Emplacement",
     "location-text": "Visitez-nous au cœur de la ville d'Aventure. Notre auberge est entourée d'attractions vibrantes et de sites culturels. Parfait pour les voyageurs en quête de confort et de commodité.",
     "contact-title": "Contactez-nous",
-    "contact-name": "Votre nom",
-    "contact-email": "Votre email",
-    "contact-message": "Votre message",
+    "contact-name-label": "Votre nom:",
+    "contact-email-label": "Votre email:",
+    "contact-message-label": "Votre message:",
+    "contact-message": "Écrivez votre message ici...",
     "contact-submit": "Envoyer",
     "footer-privacy": "Politique de Confidentialité",
     "footer-refund": "Politique de Remboursement"

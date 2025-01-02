@@ -475,7 +475,13 @@ header .navbar {
     transition: 0.3s ease;
 }
 
-.contact-section .contact-form .submit-button:hover {
+.contact-section .contact-form .submit-button:disabled {
+    background: var(--medium-gray-color);
+    border-color: var(--medium-gray-color);
+    cursor: not-allowed;
+}
+
+.contact-section .contact-form .submit-button:not(:disabled):hover {
     color: var(--primary-color);
     background: transparent;
 }
