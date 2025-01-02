@@ -381,31 +381,38 @@ header .navbar {
 
 /* Location section styling */
 .location-section {
-    padding: 50px 0 100px;
+    padding: 120px 0;
     background: var(--light-color);
 }
 
 .location-section .section-content {
-    text-align: center;
-    max-width: var(--site-max-width);
-    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .location-section .map-container {
-    margin-top: 30px;
-    border-radius: var(--border-radius-s);
+    width: 1400px;
     overflow: hidden;
+    object-fit: cover;
+    border-radius: var(--border-radius-s);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.location-section .section-title:after {
-    content: "";
-    width: 80px;
-    height: 5px;
-    display: block;
-    margin: 10px auto 0;
-    border-radius: var(--border-radius-s);
-    background: var(--secondary-color);
+.location-section .location-details {
+    max-width: 50%;
+}
+
+.location-section .location-details .section-title {
+    padding: 0;
+}
+
+.location-section .location-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
 }
 
 /* Contact section styling */
@@ -591,6 +598,7 @@ header .navbar {
 
     .hero-section .hero-details :is(.subtitle, .description),
     .about-section .about-details,
+    .location-section .location-details,
     .contact-section .contact-form {
         max-width: 100%;
     }
@@ -635,6 +643,15 @@ header .navbar {
 
     .gallery-section .gallery-list .gallery-item {
         width: calc(100% / 2 - 30px);
+    }
+
+    .location-section .section-content {
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .location-section .map-container {
+        width: 100%;
     }
 
     .contact-section .section-content {
