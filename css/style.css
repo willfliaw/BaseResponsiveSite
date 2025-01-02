@@ -134,7 +134,7 @@ header .navbar {
     border: none;
     border-radius: var(--border-radius-s);
     background: var(--secondary-color);
-    color: var(--white-color);
+    color: var(--primary-color);
     font-size: var(--font-size-s);
     transition: 0.3s ease;
 }
